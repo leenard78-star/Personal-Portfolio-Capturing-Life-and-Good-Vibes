@@ -1,0 +1,215 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Leenard F. Rivera - Home</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <link rel="stylesheet" href="css/style.css" />
+    <script>
+      tailwind.config = {
+        darkMode: "class",
+        theme: {
+          extend: {
+            colors: {
+              primary: "#facc15",
+              light: "#fefce8",
+              dark: "#1c1917",
+            },
+          },
+        },
+      };
+    </script>
+  </head>
+  <body
+    class="bg-light dark:bg-dark text-gray-800 dark:text-gray-200 transition-colors duration-300 font-sans flex flex-col min-h-screen"
+  >
+    <nav
+      class="bg-white/90 dark:bg-stone-900/90 backdrop-blur-md sticky top-0 z-50 border-b border-yellow-200 dark:border-stone-700"
+    >
+      <div class="max-w-5xl mx-auto px-6 py-4">
+        <div class="flex justify-between items-center">
+          <a
+            href="index.html"
+            class="text-xl font-bold hover:text-yellow-600 transition"
+          >
+            Leenard<span class="text-yellow-500">.</span>
+          </a>
+
+          <div class="hidden md:flex items-center gap-8 text-sm font-medium">
+            <a href="index.html" class="hover:text-yellow-500 transition"
+              >Home</a
+            >
+            <a href="about.html" class="hover:text-yellow-500 transition"
+              >About</a
+            >
+            <a href="portfolio.html" class="hover:text-yellow-500 transition"
+              >Gallery</a
+            >
+            <a href="contact.html" class="hover:text-yellow-500 transition"
+              >Contact</a
+            >
+
+            <button
+              onclick="toggleTheme()"
+              class="p-2 hover:bg-yellow-100 dark:hover:bg-stone-700 rounded-full transition"
+            >
+              <svg
+                class="w-5 h-5 hidden dark:block text-yellow-400"
+                fill="none"
+                stroke="currentColor"
+                viewBox="0 0 24 24"
+              >
+                <path
+                  stroke-linecap="round"
+                  stroke-linejoin="round"
+                  stroke-width="2"
+                  d="M12 3v1m0 16v1m9-9h-1M4 12H3m15.364 6.364l-.707-.707M6.343 6.343l-.707-.707m12.728 0l-.707.707M6.343 17.657l-.707.707M16 12a4 4 0 11-8 0 4 4 0 018 0z"
+                ></path>
+              </svg>
+              <svg
+                class="w-5 h-5 block dark:hidden text-gray-600"
+                fill="none"
+                stroke="currentColor"
+                viewBox="0 0 24 24"
+              >
+                <path
+                  stroke-linecap="round"
+                  stroke-linejoin="round"
+                  stroke-width="2"
+                  d="M20.354 15.354A9 9 0 018.646 3.646 9.003 9.003 0 0012 21a9.003 9.003 0 008.354-5.646z"
+                ></path>
+              </svg>
+            </button>
+          </div>
+
+          <button
+            class="md:hidden p-2 text-gray-600 dark:text-gray-300"
+            onclick="document.getElementById('mobileMenu').classList.toggle('hidden')"
+          >
+            <svg
+              class="w-6 h-6"
+              fill="none"
+              stroke="currentColor"
+              viewBox="0 0 24 24"
+            >
+              <path
+                stroke-linecap="round"
+                stroke-linejoin="round"
+                stroke-width="2"
+                d="M4 6h16M4 12h16M4 18h16"
+              ></path>
+            </svg>
+          </button>
+        </div>
+      </div>
+
+      <div
+        id="mobileMenu"
+        class="hidden md:hidden bg-yellow-50 dark:bg-stone-800 border-t border-yellow-200 dark:border-stone-700 p-4"
+      >
+        <div class="flex flex-col space-y-4 text-center font-medium">
+          <a
+            href="index.html"
+            class="block py-2 hover:text-yellow-600 dark:text-gray-200"
+            >Home</a
+          >
+          <a
+            href="about.html"
+            class="block py-2 hover:text-yellow-600 dark:text-gray-200"
+            >About Me</a
+          >
+          <a
+            href="portfolio.html"
+            class="block py-2 hover:text-yellow-600 dark:text-gray-200"
+            >Gallery</a
+          >
+          <a
+            href="contact.html"
+            class="block py-2 hover:text-yellow-600 dark:text-gray-200"
+            >Contact</a
+          >
+        </div>
+      </div>
+    </nav>
+
+    <main class="flex-grow flex items-center justify-center p-6">
+      <div
+        class="max-w-5xl w-full grid grid-cols-1 md:grid-cols-2 gap-10 items-center"
+      >
+        <div class="text-center md:text-left order-2 md:order-1">
+          <div
+            class="inline-block bg-yellow-200 dark:bg-yellow-900 text-yellow-800 dark:text-yellow-100 px-4 py-1 rounded-full text-xs font-bold uppercase tracking-wide mb-4"
+          >
+            BSIT Student & Photographer
+          </div>
+          <h1
+            class="text-5xl md:text-6xl font-bold mb-6 text-gray-900 dark:text-white leading-tight"
+          >
+            Capturing Life <br />
+            & <span class="text-yellow-500">Good Vibes.</span>
+          </h1>
+          <p
+            class="text-lg text-gray-600 dark:text-gray-400 mb-8 leading-relaxed"
+          >
+            Hi, I'm Leenard. I'm a 2nd year student from Capiz just enjoying the
+            journey. I love taking photos of my friends and making memories.
+          </p>
+          <div class="flex gap-4 justify-center md:justify-start">
+            <a
+              href="portfolio.html"
+              class="bg-yellow-400 hover:bg-yellow-500 text-stone-900 font-bold py-3 px-8 rounded-xl transition shadow-lg shadow-yellow-200 dark:shadow-none"
+            >
+              View Gallery
+            </a>
+            <a
+              href="contact.html"
+              class="border-2 border-gray-200 dark:border-gray-700 hover:bg-white dark:hover:bg-gray-800 font-bold py-3 px-8 rounded-xl transition"
+            >
+              Let's Talk
+            </a>
+          </div>
+        </div>
+
+        <div class="order-1 md:order-2 flex justify-center">
+          <div class="relative">
+            <div
+              class="absolute inset-0 bg-yellow-300 rounded-full blur-3xl opacity-30 dark:opacity-20 animate-pulse"
+            ></div>
+            <img
+              src="images/profile.jpg"
+              class="relative rounded-[2rem] shadow-2xl rotate-2 hover:rotate-0 transition duration-500 border-4 border-white dark:border-stone-700 w-80 h-96 object-cover"
+            />
+          </div>
+        </div>
+      </div>
+    </main>
+
+    <footer
+      class="bg-white dark:bg-stone-900 border-t border-yellow-200 dark:border-stone-800 py-8 text-center text-sm text-gray-500"
+    >
+      <p>&copy; 2026 Leenard F. Rivera. All rights reserved.</p>
+    </footer>
+
+    <script>
+      if (
+        localStorage.theme === "dark" ||
+        (!("theme" in localStorage) &&
+          window.matchMedia("(prefers-color-scheme: dark)").matches)
+      ) {
+        document.documentElement.classList.add("dark");
+      } else {
+        document.documentElement.classList.remove("dark");
+      }
+      function toggleTheme() {
+        if (document.documentElement.classList.contains("dark")) {
+          document.documentElement.classList.remove("dark");
+          localStorage.theme = "light";
+        } else {
+          document.documentElement.classList.add("dark");
+          localStorage.theme = "dark";
+        }
+      }
+    </script>
+  </body>
+</html>
